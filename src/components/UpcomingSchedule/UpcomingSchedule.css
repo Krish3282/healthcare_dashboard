@@ -1,0 +1,107 @@
+.upcoming-schedule {
+  background: #D5E8EC;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.section-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.25rem;
+  color: #2d3748;
+}
+
+.schedule-group {
+  margin-bottom: 1.5rem;
+}
+
+.group-title {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.appointments-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.appointment-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid transparent;
+  flex: 1;
+  min-width: 0;
+}
+
+.appointment-card.checkup {
+  border-left-color: #4299e1;
+}
+
+.appointment-card.specialist {
+  border-left-color: #e53e3e;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.appointment-title {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2d3748;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.appointment-time {
+  font-size: 0.875rem;
+  color: #718096;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+}
+
+.specialist-indicator {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: #fff5f5;
+  color: #e53e3e;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .upcoming-schedule {
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .appointments-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .appointment-card {
+    width: 100%;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .appointment-title {
+    font-size: 0.9rem;
+  }
+}

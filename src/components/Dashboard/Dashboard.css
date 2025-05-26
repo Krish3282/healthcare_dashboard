@@ -1,0 +1,174 @@
+/* Dashboard */
+.dashboard {
+  padding: 2rem;
+  min-width: 500px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Search */
+.search input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+ 
+}
+#search-icon{
+  position: absolute;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+
+}
+
+/* Body Image */
+.body {
+  flex: 1;
+  max-width: 600px;
+}
+
+.body img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Status Cards */
+.status {
+  flex: 1;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #D5E8EC;
+  padding: 1.25rem;
+  padding-bottom: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #2d3748;
+}
+
+.card-date {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.875rem;
+  color: #718096;
+  padding-left: 2rem;
+}
+
+.status-bar {
+  height: 5px;
+  border-radius: 2px;
+  margin: 0 -1.25rem -1.25rem;
+  margin-top: 0.75rem;
+  
+}
+
+.status-bar.healthy {
+  background-color: #48bb78;
+  width: 90%;
+  margin-left: 0.3px;
+
+
+}
+
+
+.status-bar.warning {
+  width: 80%;
+  margin-left: 0.3px;
+  background-color: #ed8936;
+}
+
+/* Activity Section */
+.activity {
+  background: #D5E8EC;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: #2d3748;
+}
+
+.activity-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.activity p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.activity img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.375rem;
+}
+
+/* Responsive Design */
+@media (min-width:700px) {
+  .dashboard{
+    margin-left:240px;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  
+  .body,
+  .status {
+    max-width: 100%;
+  }
+  
+  .status {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    min-width: calc(50% - 0.75rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    min-width: 100%;
+  }
+}
