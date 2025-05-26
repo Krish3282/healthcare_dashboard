@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base :"/Healthcare-websire",
+  base :process.env.VITE_BASE-PATH || "/healthcare_dashboard",
 })
